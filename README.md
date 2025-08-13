@@ -46,27 +46,16 @@ This project was a great opportunity to solidify my understanding of the fundame
 
 ## 📂 Project Structure
 
-/postify-app
-├── assets/ # Contains project screenshots
-├── public/
-│ └── css/
-│ └── style.css # Main stylesheet (Light & Dark themes)
-├── views/
-│ ├── index.ejs # Shows all posts
-│ ├── new.ejs # Form to create a new post
-│ ├── show.ejs # Shows a single post in detail
-│ ├── edit.ejs # Form to edit a post
-├── .gitignore # Specifies files to ignore (e.g., node_modules)
-├── index.js # Main server file (Express setup and routes)
-├── package.json # Project dependencies and scripts
-└── README.md # You are here!
+<pre> /postify-app ├── assets/ # Contains project screenshots ├── public/ │ └── css/ │ └── style.css # Main stylesheet (Light & Dark themes) ├── views/ │ ├── index.ejs # Shows all posts │ ├── new.ejs # Form to create a new post │ ├── show.ejs # Shows a single post in detail │ ├── edit.ejs # Form to edit a post ├── .gitignore # Specifies files to ignore (e.g., node_modules) ├── index.js # Main server file (Express setup and routes) ├── package.json # Project dependencies and scripts └── README.md # You are here! </pre>
 
 ## How to Run This Project Locally
 
 1.  Clone the repository:
+
     ```bash
-    git clone [https://github.com/RutvijDev/nodejs-express-crud-post.git](https://github.com/RutvijDev/nodejs-express-crud-post.git)
+    git clone https://github.com/RutvijDev/nodejs-express-crud-post.git
     ```
+
 2.  Navigate into the project directory:
     ```bash
     cd node-js-express-crud-post
