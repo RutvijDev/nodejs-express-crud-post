@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Post</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create a New Post</h2>
+      <form method="post" action="/posts" class="post-form">
+        <input
+          placeholder="Enter username"
+          name="username"
+          type="text"
+          required
+        />
+        <textarea
+          rows="8"
+          placeholder="Write your post here..."
+          name="content"
+          required
+        ></textarea>
+        <button class="btn">Submit Post</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Postify</h1>
+      <a href="http://localhost:8080/posts/new" class="btn btn-new-post"
+        >Create New Post</a
+      >
+
+      <div class="posts-list">
+        <% for(post of posts) { %>
+        <div class="post">
+          <h4 class="user">@<%= post.username %></h4>
+          <p class="content"><%= post.content %></p>
+          <div class="actions">
+            <a
+              href="http://localhost:8080/posts/<%=post.id%>"
+              class="btn btn-view"
+              >View</a
+            >
+            <a
+              href="http://localhost:8080/posts/<%=post.id%>/edit"
+              class="btn btn-edit"
+              >Edit</a
+            >
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+              <button class="btn btn-danger">Delete</button>
+            </form>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>
